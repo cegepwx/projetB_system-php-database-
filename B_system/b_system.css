@@ -1,0 +1,528 @@
+* h1 {
+  font-size: 300%;
+}
+
+* p {
+  font-weight: lighter;
+  font-size: 125%;
+}
+
+@media (max-width:550px) {
+  *p {
+    font-size: calc(0.4rem + 1vw);
+    line-height: normal;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: #007ef3;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ||section header */
+.firstLineB {
+  display: none;
+}
+
+.firstLine {
+  background-color: rgba(4, 84, 170, 0.5);
+  align-items: center;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  box-shadow: 2px 4px 6px rgb(18, 117, 223);
+  font-size: 120%;
+}
+
+.userLogo {
+  margin-left: 30px;
+}
+
+.navigation {
+  display: flex;
+  margin: auto;
+}
+
+.firstLine a {
+  text-decoration: none;
+  color: white;
+  padding: 25px 15px;
+}
+
+.firstLine a:hover {
+  background-color: #0364be;
+}
+
+.searchArea {
+  display: flex;
+  margin-right: 30px;
+  margin-left: auto;
+  align-items: center;
+}
+
+.magnifyingGlass {
+  height: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.searchInput {
+  display: none;
+}
+
+.yourArea {
+  background-color: transparent;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 5px;
+  color: white;
+  font-size: calc(0.5rem + 0.8vw);
+  display: flex;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.avatar {
+  height: 20px;
+}
+
+@media screen and (max-width:550px) {
+  .firstLine {
+    display: none;
+  }
+  .firstLineB {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .menuburger {
+    /* padding-left: 0; */
+    cursor: pointer;
+  }
+  .userLogo {
+    padding-right: 20px;
+  }
+  .avataronly {
+    padding-right: 0;
+  }
+}
+
+/* ||section "we make magic" */
+.workingMan {
+  background-image: url("image/Man_working.png");
+  background-repeat: no-repeat;
+  background-position: 80% 10%;
+}
+
+@media screen and (max-width:550px) {
+  .workingMan {
+    background-position-x: center;
+    background-size: 50%;
+    height: 800px;
+  }
+}
+
+.makeMagic {
+  color: white;
+  padding-left: 250px;
+  padding-top: 100px;
+  width: 500px;
+  padding-bottom: 250px;
+}
+
+.makeMagic h1 {
+  font-size: calc(1.5rem + 3vw);
+  font-weight: 600;
+}
+
+.makeMagic p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.makeMagic a {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px 50px;
+  margin-top: 70px;
+}
+
+@media screen and (max-width:550px) {
+  .makeMagic {
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    padding: 10px 60px;
+    width: auto;
+    line-height: 200%;
+  }
+  .makeMagic a {
+    padding: 20px 50px;
+  }
+}
+
+/* ||section "What do we do" */
+.whatDo {
+  background-color: white;
+  text-align: center;
+  padding: 50px 300px 100px 300px;
+}
+
+.whatDo p {
+  color: rgb(112, 112, 112)
+}
+
+@media screen and (max-width:550px) {
+  .whatDo {
+    padding: 60px;
+    line-height: 200%;
+  }
+  .whatDo h1 {
+    font-size: 230%;
+  }
+}
+
+/* ||section 4 grids */
+.fourGrids {
+  color: white;
+  font-weight: lighter;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (max-width: 550px) {
+  .fourGrids {
+    grid-template-columns: 1fr;
+    grid-template-rows:auto;
+  }
+  .photoworking {
+    grid-area: 1/1/2/2;
+  }
+  .howdo {
+    grid-area: 2/1/3/2;
+  }
+  .group {
+    grid-area: 3/1/4/2;
+  }
+  .ourvalues {
+    grid-area: 4/1/5/2;
+  }
+}
+
+/*|| 1em grid "How do we do it" */
+.howdo {
+  padding-left:26%;
+  padding-top: 13%;
+  padding-right: 8%;
+  padding-bottom: 13%;
+  line-height: 200%;
+}
+
+.howdo h1 {
+  padding-bottom: 10px;
+  line-height: normal;
+}
+
+.howdo a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.howdo img {
+  padding-left: 12px;
+  padding-top: 10px;
+  height: 15px;
+}
+
+@media screen and (max-width:550px) {
+  .howdo {
+    padding: 60px;
+  }
+  .howdo h1 {
+    font-size: 230%;
+  }
+  .howdo p {
+    width: 100%;
+  }
+}
+
+/*|| 2em grid photoworking */
+.photoworking img {
+  border-right: none;
+  border-top: #d8ddff;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ||3em grid image "groupe" */
+.group {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10%; 
+  background-color: #0364be;
+}
+
+/* ||4em grid "Our values" */
+.ourvalues {
+  padding-left: 8%;
+  padding-top: 8%;
+  padding-bottom: 13%;
+  padding-right: 26%;
+  border-left: #004c94;
+}
+
+.displaymore {
+  display: flex;
+  border-bottom: 0.3px solid #b8ddff;
+  justify-content: space-between;
+}
+
+.displaymoin {
+  display: none;
+}
+
+.displaymore button {
+  background-color: #007ef3;
+  color: white;
+  border: none;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+@media screen and (max-width:550px) {
+  .group {
+    padding: 60px 0;
+    padding-bottom: 0;
+  }
+  .group img {
+    width: 50%;
+  }
+  .ourvalues {
+    background-color: #0364be;
+    padding: 60px;
+  }
+  .ourvalues h1 {
+    font-size: 230%;
+  }
+  .displaymore button {
+    background-color: #0364be;
+  }
+}
+
+/* ||section "Contact us!" */
+.contactus {
+  background-color: white;
+  padding-left: 13%;
+  padding-top: 8%;
+}
+
+.contactus p {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.customer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: white;
+  padding-left: 13%;
+  padding-bottom: 5%;
+   padding-right: 170px;  
+}
+
+@media screen and (max-width: 550px) {
+  .contactus {
+    padding: 70px;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .contactus h1 {
+    font-size: 230%;
+  }
+  .customer {
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    padding-top: 0;
+    align-items: center;
+  }
+}
+
+.userDemand {
+  max-width: 95%;
+  padding-right: 1%;
+}
+
+.userinput {
+  outline: none;
+  width: 90%;
+  height: 25px;
+  margin: 8px;
+  margin-left: 0;
+  padding: 10px;
+  border: 3px solid rgb(223, 222, 222);
+  border-radius: 5px;
+  font-weight: 100;
+}
+
+.userinput:focus {
+  border: 3px solid #3ca1ff;
+}
+
+.userDemand textarea {
+  max-height: 100px;
+}
+
+.authorize {
+  display: flex;
+}
+
+.authorize input {
+  width: 20px;
+  height: 20px;
+  margin: 20px 5px 20px 0px;
+}
+
+.userDemand button {
+  cursor: cell;
+  border-radius: 5px;
+  font-size: 150%;
+  /* font-size: calc(0.5rem + 0.8vw); */
+  padding: 10px 80px;
+  margin-top: 30px;
+  border: none;
+}
+@media screen and (max-width:550px) {
+  .userDemand {
+    padding:18px;
+    padding-top: 0;
+  }
+  .userDemand button {
+    margin: 30px 10px;
+    padding: 20px 90px;
+  }
+}
+
+.question {
+  max-width: 90%;
+}
+
+.ifyouhave {
+  background-color: #eff7ff;
+  padding: 18px;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+.ifyouhave img {
+  max-width: 100%;
+  height: auto;
+}
+
+.findoffice {
+  background-color: #f7f7f7;
+  padding: 20px 30px;
+  margin-top: 5px;
+}
+
+.findoffice a {
+  text-decoration: none;
+  color: #007ef3;
+}
+
+@media screen and (max-width:550px) {
+  .question {
+    max-width: 100%;
+    padding: 40px;
+    padding-top: 0;
+  }
+  .ifyouhave {
+    padding: 0;
+  }
+  .findoffice {
+    margin-top: 20px;
+  }
+}
+
+/* ||section "Do you want to start" */
+.wantstart {
+  background-color: #f3f3f3;
+  font-weight: bolder;
+  font-size: 150%;
+  text-align: center;
+  height: 200px;
+  padding-top: 60px;
+  border-top: 3px solid rgb(224, 224, 224);
+  border-bottom: 3px solid rgb(224, 224, 224);
+}
+
+.wantstart a {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  font-size: 65%;
+  border-radius: 5px;
+  padding: 15px 50px;
+  background-color: #007ef3;
+}
+
+.wantstart p {
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width:550px) {
+  .wantstart{
+    padding: 80px;
+  }
+  .wantstart p {
+    margin-bottom: 50px;
+  }
+  .wantstart a {
+    padding: 20px 40px
+  }
+}
+
+/* ||section footer */
+footer {
+  background-color: white;
+}
+
+.userlink {
+  text-align: center;
+  height: 120px;
+  padding-top: 80px;
+}
+
+.userlink a {
+  padding: 5px 10px;
+}
+
+@media screen and (max-width:350px){
+  .userlink {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    padding-top: 80px;
+  }
+}
+
+.blacklogo {
+  text-align: center;
+  padding: 50px;
+  border-top: 3px solid rgb(224, 224, 224);
+}
+
+.blacklogo svg {
+  height: 25px;
+  width: auto;
+}
